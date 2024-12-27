@@ -1,0 +1,23 @@
+{
+  "name": "database-scheduler",
+  "version": "1.0.0",
+  "description": "Google Cloud Function to schedule database instance operations",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint src/**/*.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "3.3.0",
+    "@google-cloud/sql-admin": "5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.48.0",
+    "vitest": "0.34.3"
+  }
+}
